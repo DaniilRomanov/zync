@@ -5,8 +5,8 @@ rvm:
  - 2.7
 
 before_install:
- - sudo apt update
- - sudo apt install postgresql-12
- - sudo apt install shared-mime-types
+ - sudo apt-get update -q
+ - sudo apt-get install postgresql-12
+ - sudo apt-get install shared-mime-types
  - sudo gem install bundler
  - sudo bundle config build.pg && bundle install --deployment --path vendor/bundle
